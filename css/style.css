@@ -119,7 +119,7 @@ p {
   background-color: rgb(56, 150, 56);
 }
 
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   main {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -131,6 +131,7 @@ p {
       "contact offer";
     text-align: left;
     width: 550px;
+    height: 200px;
   }
 
   #status {
@@ -141,7 +142,7 @@ p {
   img {
     grid-area: img;
     margin: 0 auto;
-    min-width: 50%;
+    max-width: 60%;
   }
 
   #name {
@@ -179,7 +180,8 @@ p {
     font-size: 12px;
     padding: 10px auto;
     padding-left: 20px;
+    padding-bottom: 0;
     background-color: lightgray;
   }
 
-} */
+}
