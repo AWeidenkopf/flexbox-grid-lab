@@ -23,50 +23,63 @@ html {
 body {
   background-color: rgb(13, 68, 64);
   /* Use a system font, if none are available use an available sans-sarif   font */
-  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100vh; 
+  /* viewport Height is equal to the percentage of the view height */
 }
 
 main {
   background-color: white;
-  width: 55%;
-  font-size: 2rem;
+  height: 400px;
+  width: 250px;
+  font-size: 16px;
   text-align: center;
 }
 
 #status {
   text-align: right;
-  color: rgb(177, 170, 170);
+  color: rgb(143, 137, 137);
   font-size: 10px;
+  font-family: 'Montserrat';
   font-weight: bold;
   padding: 10px 20px 0 0;
 }
 
 img {
   border-radius: 50%;
-  max-width: 45%;
+  max-width: 50%;
   border: rgb(68, 200, 68) 4px solid;
+  height: 125px;
 }
 
-h1,
+h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  padding: 8px 0;
+}
+
 p {
   margin: 0;
 }
 
-h1 {
-  font-size: 30px;
-  font-weight: bold;
-  padding: 8px 0;
+#occupation>p:first-child {
+  margin-bottom: 12px;
+  padding-top: 0;
 }
 
 #occupation {
-  background-color: lightgray;
+  background-color: rgb(240, 239, 239);
   padding: 16px 0;
+  height: 85px;
+  font-family: 'Montserrat';
+
 }
 
 #brand {
@@ -89,6 +102,15 @@ h1 {
   justify-content: center;
 }
 
+#offer>p:first-child {
+  font-weight: bolder;
+}
+
+#offer>p:last-child {
+  margin-top:  5px;
+  font-family: 'Montserrat';
+}
+
 #contact>p:first-child {
   background-color: rgb(74, 164, 74);
 }
@@ -97,7 +119,7 @@ h1 {
   background-color: rgb(56, 150, 56);
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   main {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -160,4 +182,4 @@ h1 {
     background-color: lightgray;
   }
 
-}
+} */
